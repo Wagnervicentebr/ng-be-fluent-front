@@ -1,0 +1,91 @@
+.img-container {
+    background: url(../../../assets/friends2.png);
+    background-repeat: no-repeat;
+    background-size: 960px;
+    margin: 0 60px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 1120px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 0 100px;
+}
+
+.login-container .img-logo{
+    margin-right: 60px;
+}
+
+.login-container .form {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+    margin: 0 60px
+}
+
+.login-container .form form {
+    width: 380px;
+    height: 360px;
+    border-radius: 50px;
+    background: #CDCDCD;
+    margin-right: 60px;
+}
+
+
+.login-container .form form h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 500;
+    text-align: center;
+    margin: 14px 0;
+}
+
+.login-container .form form a {
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+.login-container .form form .left-side {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 15px;
+    color: #e02041;
+    margin: 14px 0;
+}    
+
+.login-container .form form .left-side i {
+    margin: 0 20px 0px 5px;
+}   
+
+@media only screen and (max-width: 980px) {
+    .img-container {
+        background: url(../../../assets/aviao.png) !important;;
+        background-size: 430px !important;
+        background-repeat: no-repeat !important;
+        margin: 0px 40px !important;
+    }
+
+    .login-container {
+        justify-content: center;
+        margin: 0 30px !important;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .img-container {
+        background-size: 860px;
+        margin: 0;
+    }
+
+    .login-container {
+        margin: 0;
+    }
+}
