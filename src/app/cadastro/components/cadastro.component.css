@@ -1,0 +1,123 @@
+.cadastro-container {
+    width: 100%;
+    display: grid;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.cadastro-container .panel {
+    background: #EDEDED;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 30px;
+    border: 1px solid #dccece;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    box-shadow: 5px 10px 50px 10px #888888;
+}
+
+.cadastro-container .panel .profile{
+    position: absolute;
+    top: 188px;
+    left: 37px;
+}
+
+.cadastro-container .panel .form {
+    position: relative;
+}
+
+.cadastro-container .panel form input, select {
+    position: absolute;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid black;
+    border-radius: 0px;
+    width: 236px;
+    height: 30px;
+    left: 160px;
+}
+
+.cadastro-container .panel form .btn-cadastro {
+    top: 383px;
+    width: 400px;
+    left: 8px;
+    position: absolute;
+}
+
+.cadastro-container .panel form .right-side {
+    display: block;
+    margin-top: 2px;
+    margin-left: 8px;
+    color: #e02041;
+}    
+
+
+.cadastro-container .panel form .btn-back {
+    display: flex;
+    font-size: 15px;
+    color: #e02041;
+}   
+
+.cadastro-container .panel .apresentacao {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cadastro-container .panel .apresentacao h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+
+.cadastro-container .panel .apresentacao h2 + h2 {
+    margin-bottom: 40px;
+}
+
+.cadastro-container .panel .apresentacao img {
+    margin-bottom: 80px;
+}
+
+.input-username {
+    top: 190px;
+}
+
+.input-email {
+    top: 230px;
+}
+
+.input-sexo {
+    top: 270px;
+}
+
+.input-senha {
+    top: 310px;
+}
+
+@media only screen and (max-width: 900px) {
+    .cadastro-container .panel {
+        flex-direction: column-reverse;
+        margin: 50px 0;
+    }
+
+    .cadastro-container .panel .apresentacao {
+        height: 67vh;
+    }
+
+    .cadastro-container .panel .apresentacao img {
+        margin-bottom: 30px;
+    }
+
+    .cadastro-container .panel form .btn-back {
+        margin-bottom: 16px;
+    }
+}
