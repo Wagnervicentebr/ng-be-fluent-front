@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css?family=Ribeye&display=swap');
 
 /*RESET ELEMNTS*/
 * {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box;}
@@ -8,11 +7,6 @@ ul {list-style: none;}
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #f5f5f5;}
 
-
-textarea, input, button, span, a, select {
-    font-family: 'Ribeye', cursive;
-    text-decoration: none;
-}
 
 input, select {
     width: 90%;
@@ -39,9 +33,16 @@ input, select {
     font-size: 20px;
     line-height: 60px;
     transition: filter 0.2s;
+    cursor: pointer;
 }
 
 .btn-red:hover {
     filter: brightness(80%);
+}
+
+.btn-red:disabled {
+    opacity: .65;
+    cursor: default;
+    filter: brightness(100%);
 }
 

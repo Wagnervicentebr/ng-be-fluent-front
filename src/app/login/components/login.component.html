@@ -2,17 +2,15 @@
     <div class="login-container">
         <div class="form">
             <img class="img-logo" src="../assets/logo.png" alt="Be fluent">
-            <form>
+            <form [formGroup]="form">
                 <h1>Logon</h1>
-                <input type="text" placeholder="Username">
-                <input type="password" placeholder="Password">
-                <button routerLink="/home" class="btn-red">Login</button>
-
+                <input type="text" placeholder="Username" formControlName="username">
+                <input type="password" placeholder="Password" formControlName="password">
+                <button (click)="logar()" [disabled]="form.invalid" class="btn-red">Login</button>
                 <a routerLink="/register">
                     forgot your password ?
                 </a>
-                
-                <a routerLink="/cadastro" class="left-side">
+                <a  routerLink="/cadastro" class="left-side">
                     Sign In
                     <i class="material-icons">arrow_forward</i>
                 </a>

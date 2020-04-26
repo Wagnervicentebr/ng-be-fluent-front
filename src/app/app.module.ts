@@ -8,6 +8,8 @@ import { LoginModule } from './login/login.module';
 import { LoginRoutingModule } from './login/login-routing.module';
 import { CadastroModule } from './cadastro/cadastro.module';
 import { CadastroRoutingModule } from './cadastro/cadastro-routing.module';
+import { HomeModule } from './home/home.module';
+import { HomeRoutingModule } from './home/home-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +22,8 @@ import { CadastroRoutingModule } from './cadastro/cadastro-routing.module';
     LoginRoutingModule,
     CadastroModule,
     CadastroRoutingModule,
+    HomeModule,
+    HomeRoutingModule,
     
     AppRoutingModule,
   ],
