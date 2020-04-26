@@ -27,8 +27,8 @@ export class LoginComponent implements OnInit {
 
   gerarForm() {
     this.form = this.fb.group({
-      username: ['', [Validators.required, Validators.maxLength(15)]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      username: ['wagner.vicente', [Validators.required, Validators.maxLength(15)]],
+      password: ['123456', [Validators.required, Validators.minLength(6)]]
     })
   }
 

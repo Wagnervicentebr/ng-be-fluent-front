@@ -129,7 +129,7 @@
     background: rgb(18, 223, 11);
 }
 
-textarea, input, button, span, a, select {
+textarea, input, button, span, a, select, h2 {
     font-family: 'Ribeye', cursive;
     text-decoration: none;
 }

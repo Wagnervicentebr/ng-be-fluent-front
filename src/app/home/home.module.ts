@@ -5,6 +5,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './components/home.component';
 import { HomeRoutingComponent } from './home-routing.component';
+import { HomeService } from './services/home.service';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -17,6 +19,9 @@ import { HomeRoutingComponent } from './home-routing.component';
     RouterModule,
     MatSnackBarModule,
     ReactiveFormsModule
+  ],
+  providers: [
+    HomeService
   ]
 })
 export class HomeModule { }

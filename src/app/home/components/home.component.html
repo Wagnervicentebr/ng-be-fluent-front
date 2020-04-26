@@ -1,4 +1,31 @@
-<div class="flex">
-    <h1>Em Construção</h1>
-    <img src="../../../assets/construcao.png" alt="Em construcao">
+<div class="hero">
+<div class="home-container">
+    <div class="turn-off">
+        <a (click)="deslogar()">
+            TurnOff
+            <i class="material-icons">power_settings_new</i>
+        </a>
+    </div>
+    <div class="home-panel">
+
+        <section class="panel-card create-deck">
+            <img src="../assets/lapis.png" alt="create new">
+            <h1>Create new deck</h1>
+            <button>Create</button>
+        </section>
+        <section class="panel-card select-deck">
+            <img src="../assets/calendario.png" alt="select deck">
+            <h1>Select Deck</h1>
+            <select>
+                <option>Selecione</option>
+            </select>
+            <button>Go !</button>
+        </section>
+        <section class="panel-card welcome-profile">
+            <img src="../assets/man.png" alt="man">
+            <h1>Welcome! Wagner</h1>
+            <button>Profile</button>
+        </section>
+    </div>
+</div>
 </div>
