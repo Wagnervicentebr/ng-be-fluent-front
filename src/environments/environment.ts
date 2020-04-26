@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  baseUrl: 'http://localhost:3000/',
-  baseUrlApi: 'http://localhost:3000/api/'
+  baseUrl: 'https://befluent-backend.herokuapp.com/',
+  baseUrlApi: 'https://befluent-backend.herokuapp.com/api/'
 };
 
 /*
